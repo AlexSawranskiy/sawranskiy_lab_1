@@ -83,15 +83,15 @@ int main() {
     // Dynamic creation of a book object
     Book* book1 = new Book("C++ Programming", "Bjarne Stroustrup", 1985, { "Introduction", "Classes", "Inheritance", "Templates" });
     (*book1)();
-    cout << "Page 1: " << (*book1)[0] << std::endl;
+    cout << "Page 1: " << (*book1)[0] << endl;
 
     // Using the derivation operator
-    cout << *book1 << std::endl;
+    cout << *book1 << endl;
 
     // Using the input operator
     Book book2;
     cin >> book2;
-    cout << book2 << std::endl;
+    cout << book2 << endl;
 
     // Work with an array of objects
     size_t bookCount;
@@ -108,7 +108,7 @@ int main() {
 
     for (size_t i = 0; i < bookCount; ++i) 
     {
-        cout << books[i] << std::endl;
+        cout << books[i] << endl;
     }
 
     // Cleaning memory
